@@ -1,0 +1,29 @@
+{
+  "name": "goodreadme",
+  "version": "1.0.0",
+  "description": "User CLI inputs used to create README.md",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiananaik/goodREADME.git"
+  },
+  "keywords": [
+    "README",
+    "generator",
+    "CLI"
+  ],
+  "author": "Kiana N. Garcia Darlington",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kiananaik/goodREADME/issues"
+  },
+  "homepage": "https://github.com/kiananaik/goodREADME#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "fs": "0.0.1-security",
+    "inquirer": "^7.0.4"
+  }
+}
