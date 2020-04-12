@@ -73,16 +73,21 @@ inquirer
     // console.log(res.data.profile picture from git);
     // console.log(res.data.email);
     console.log(res.data.avatar_url);
-    console.log(res.data.email);
+    console.log(res.data.company);
     // console.log(res.data.user live web portfolio);
     // console.log(res.data.user description);
 
     // const pic = (res.data.avatar_url);
     // const email = res.data.email;
-    const pic = "(" + res.data.avatar_url + ")";
-    const email = res.data.email;
-    // const portfolio = res.data.portfolio link;
-    // const bio = res.data.user summary;
+    const pic = `(${res.data.avatar_url})`;
+
+    // ![GitHub Logo](/images/logo.png)
+    // Format: ![Alt Text](url)
+    // img format!!!!!!!!!!!!*******************************
+
+    const email = res.data.company;
+    const portfolio = res.data.blog;
+    const bio = res.data.bio;
 
 
 
@@ -94,7 +99,7 @@ inquirer
 
 
     //NOW WE'LL PUT IT TOGETHER BY APPENDING USER INPUTS & API DATA
-    fs.appendFile("ReadMe.md", "Title: " + details.title +
+    fs.appendFile("README.md", "Title: " + details.title +
       "\n\n\nContents: " + "\n1.Description" + "\n2.Usage" + 
       "\n3.Installation" + "\n4.Author" + "\n5.License" + 
       "\n6.Tests" + "\n7.Contributions" +
@@ -126,7 +131,7 @@ inquirer
       }
     );
 
-    fs.rename('ReadMe.md', details.fileName + 'ReadMe.md', function (err) {
+    fs.rename('README.md', details.fileName + 'README.md', function (err) {
       if (err) throw err;
       console.log('File Renamed!');
     });
