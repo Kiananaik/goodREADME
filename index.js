@@ -99,7 +99,7 @@ inquirer
 
 
     //NOW WE'LL PUT IT TOGETHER BY APPENDING USER INPUTS & API DATA
-    fs.appendFile("README.md", "Title: " + details.title +
+    fs.appendFile("goodREADME.md", "Title: " + details.title +
       "\n\n\nContents: " + "\n1.Description" + "\n2.Usage" + 
       "\n3.Installation" + "\n4.Author" + "\n5.License" + 
       "\n6.Tests" + "\n7.Contributions" +
@@ -131,10 +131,12 @@ inquirer
       }
     );
 
-    fs.rename('README.md', details.fileName + 'README.md', function (err) {
-      if (err) throw err;
-      console.log('File Renamed!');
-    });
+    if (details.fileName.length > 0) {
+      fs.rename('goodREADME.md', details.fileName + 'README.md', function (err) {
+        if (err) throw err;
+        console.log('File Renamed!');
+      });
+    }
 
   });
 });
