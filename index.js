@@ -5,7 +5,7 @@ const inquirer = require("inquirer");
 // const licenses = require("./licenses");
 
 // const util = require("util"); //MAY NOT NEED THIS ONE
-
+ 
 
 //WILL REFER TO THESE INPUTS AS ANSWERS IN A LATER FUNCTION
 inquirer
